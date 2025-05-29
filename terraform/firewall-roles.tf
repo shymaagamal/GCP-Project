@@ -60,7 +60,7 @@ resource "google_compute_firewall" "allow_gke_node_ports" {
   priority      = 1000
   source_ranges = ["10.10.0.0/16"]
 
-  target_tags = ["gke-node"]
+  target_tags = ["gke-node-2"]
 
   allow {
     protocol = "tcp"
